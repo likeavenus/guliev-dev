@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Router,
+    HashRouter,
     Switch,
     Route,
 } from "react-router-dom";
@@ -19,7 +19,7 @@ const customHistory = createBrowserHistory();
 
 function App() {
   return (
-      <Router history={customHistory}>
+      <HashRouter>
         <div className={styles.App}>
             <Header/>
 
@@ -30,7 +30,7 @@ function App() {
             </Switch>
 
         </div>
-      </Router>
+      </HashRouter>
   );
 }
 

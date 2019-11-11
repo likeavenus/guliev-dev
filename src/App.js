@@ -11,8 +11,6 @@ import Header from './components/Header/Header';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
-import { createBrowserHistory } from "history";
-const customHistory = createBrowserHistory();
 
 
 

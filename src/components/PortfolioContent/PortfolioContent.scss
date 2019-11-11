@@ -1,9 +1,16 @@
+$tablet: 768px;
 .block {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding-top: 50px;
   background: #2F80ED;
+  overflow: hidden;
+  position: relative;
+  
+  @media (min-width: $tablet) {
+    background: #fff;
+  }
 }
 
 .block_wrapper {
@@ -13,4 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }

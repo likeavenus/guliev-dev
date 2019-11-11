@@ -17,6 +17,12 @@ export default class Header extends Component {
         })
     };
 
+    componentDidMount() {
+        // window.addEventListener('scroll', function (e) {
+        //     console.log(this.pageYOffset)
+        // })
+    }
+
     render() {
 
         const {burgerMenu} = this.state;

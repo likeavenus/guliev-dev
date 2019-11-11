@@ -8,26 +8,45 @@ export default class PortfolioContent extends Component {
 
         this.state = {
             projects: [
+                // {
+                //     id: 1,
+                //     name: 'Мне нужна Швейцария',
+                //     href: 'http://switzerland.inbase.me/',
+                //     imgSrc: require('./img/switzerland.jpg'),
+                //     info: 'Сайт с несколькими страницами с освещением туристических мест в Швейцарии. Делал в паре с дизайнером строго по ТЗ.',
+                //     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
+                // },
                 {
-                    id: 1,
-                    name: 'Мне нужна Швейцария',
-                    href: 'http://switzerland.inbase.me/',
-                    imgSrc: require('./img/switzerland.jpg'),
-                    info: 'Разрабатывал сайт по готовому дизайну'
+                    id: 5,
+                    name: 'Aurora Streaming Solutions',
+                    href: 'http://bk.auroraproduction.ru/',
+                    imgSrc: require('./img/aurora.png'),
+                    info: 'Разработал лэндинг для стриминговой компании',
+                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript #OnePageScroll'
                 },
                 {
                     id: 2,
-                    name: 'АкваПомощь',
-                    href: 'https://www.aquapomosh.ru/',
-                    imgSrc: require('./img/aqua.jpg'),
-                    info: 'Разрабатывал сайт по готовому дизайну'
-                },
-                {
-                    id: 3,
                     name: 'Канбан-доска',
                     href: 'https://likeavenus.github.io/canban-test/',
                     imgSrc: require('./img/kanban.png'),
-                    info: 'Разработал свою канбан доску, на чистом JavaScript, без бэкенда.'
+                    info: 'Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.',
+                    hashtags: "#JavaScript #Drag'n'Drop"
+                },
+                {
+                    id: 3,
+                    name: 'АкваПомощь',
+                    href: 'https://www.aquapomosh.ru/',
+                    imgSrc: require('./img/aqua.jpg'),
+                    info: 'Разрабатывал сайт по готовому дизайну для фирмы по ремонту / обслуживанию водоснабжающих агрегатов для частных домов',
+                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
+                },
+                {
+                    id: 4,
+                    name: 'Leto',
+                    href: 'https://likeavenus.github.io/Leto/',
+                    imgSrc: require('./img/leto.jpg'),
+                    info: 'Разрабатывал главную страницу с анимациями',
+                    hashtags: '#CSS Animations'
                 }
             ]
         }
@@ -46,6 +65,7 @@ export default class PortfolioContent extends Component {
                     projectAvatar={item.imgSrc}
                     avatarAlt={item.name}
                     projectInfo={item.info}
+                    hashtags={item.hashtags}
                 />
             )
         });
@@ -56,6 +76,7 @@ export default class PortfolioContent extends Component {
                     {projectsArray}
                 </div>
 
+                <div className={styles.block}></div>
             </div>
         )
     }

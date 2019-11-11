@@ -3,7 +3,12 @@
   display: block;
   margin: 0 auto;
   padding-top: 50px;
-  background: #2F80ED; }
+  background: #2F80ED;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 768px) {
+    .block {
+      background: #fff; } }
 
 .block_wrapper {
   width: 280px;
@@ -12,5 +17,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
+  @media (min-width: 768px) {
+    .block_wrapper {
+      width: 100%; } }
 
 /*# sourceMappingURL=PortfolioContent.css.map */

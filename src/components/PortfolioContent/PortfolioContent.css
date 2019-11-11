@@ -1,0 +1,16 @@
+.block {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #2F80ED; }
+
+.block_wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+
+/*# sourceMappingURL=PortfolioContent.css.map */

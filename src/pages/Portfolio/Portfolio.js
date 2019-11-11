@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import PortfolioContent from '../../components/PortfolioContent/PortfolioContent';
 
 export default class Portfolio extends Component {
     render() {
         return(
-            <div>Portfolio</div>
+            <React.Fragment>
+                <PortfolioContent/>
+            </React.Fragment>
         )
     }
 }

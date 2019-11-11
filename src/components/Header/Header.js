@@ -27,14 +27,14 @@ export default class Header extends Component {
             burgerButton += ` ${styles.active}`;
             nav = <nav className={styles.header_nav}>
                 <ul className={styles.header_list}>
-                    <li>
-                        <Link onClick={this.handleToggleBurgerMenu} to={'/'}>Home</Link>
+                    <li className={styles.header_item}>
+                        <Link className={styles.header_link} onClick={this.handleToggleBurgerMenu} to={'/'}>Home</Link>
                     </li>
-                    <li>
-                        <Link onClick={this.handleToggleBurgerMenu} to={'/about'}>About</Link>
+                    <li className={styles.header_item}>
+                        <Link className={styles.header_link} onClick={this.handleToggleBurgerMenu} to={'/about'}>About</Link>
                     </li>
-                    <li>
-                        <Link onClick={this.handleToggleBurgerMenu} to={'/portfolio'}>Portfolio</Link>
+                    <li className={styles.header_item}>
+                        <Link className={styles.header_link} onClick={this.handleToggleBurgerMenu} to={'/portfolio'}>Portfolio</Link>
                     </li>
                 </ul>
             </nav>;

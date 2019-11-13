@@ -2,6 +2,7 @@ $tablet: 768px;
 
 .block {
   padding-top: 50px;
+  padding-bottom: 20px;
   background: url("./img/bg2.jpg") no-repeat center / cover;
   position: relative;
 
@@ -17,7 +18,7 @@ $tablet: 768px;
   }
 
   @media (min-width: $tablet) {
-
+    padding-bottom: 0;
     height: calc(100vh - 50px);
   }
 }
@@ -51,6 +52,10 @@ $tablet: 768px;
 .block_info_text {
   margin-bottom: 20px;
   font-size: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;

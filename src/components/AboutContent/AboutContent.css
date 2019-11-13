@@ -1,5 +1,6 @@
 .block {
   padding-top: 50px;
+  padding-bottom: 20px;
   background: url("./img/bg2.jpg") no-repeat center/cover;
   position: relative; }
   .block:before {
@@ -12,6 +13,7 @@
     background: rgba(255, 255, 255, 0.7); }
   @media (min-width: 768px) {
     .block {
+      padding-bottom: 0;
       height: calc(100vh - 50px); } }
 
 .block_wrapper {
@@ -39,6 +41,8 @@
 .block_info_text {
   margin-bottom: 20px;
   font-size: 15px; }
+  .block_info_text:last-child {
+    margin-bottom: 0; }
   @media (min-width: 768px) {
     .block_info_text {
       font-size: 20px; } }

@@ -12,7 +12,7 @@ $mont: 'Montserrat', sans-serif;
   }
 
   @media (min-width: $tablet) {
-
+    width: 700px;
   }
 }
 
@@ -27,6 +27,10 @@ $mont: 'Montserrat', sans-serif;
     width: 90%;
     margin: 0 auto 8px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $tablet) {
+    width: 700px;
   }
 }
 
@@ -49,6 +53,11 @@ $mont: 'Montserrat', sans-serif;
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: $tablet) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .block_counters {
@@ -60,6 +69,14 @@ $mont: 'Montserrat', sans-serif;
 .counter_info {
   margin-left: 4px;
   margin-right: 4px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 .counter_top {
@@ -67,12 +84,23 @@ $mont: 'Montserrat', sans-serif;
   line-height: 17px;
   font-weight: bold;
   font-family: $mont;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+  }
 }
 
 .counter_bot {
   font-size: 11px;
   line-height: 13px;
   font-family: $mont;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 .user_info {
@@ -85,6 +113,10 @@ $mont: 'Montserrat', sans-serif;
   @media (min-width: 375px) {
     width: 338px;
   }
+
+  @media (min-width: $tablet) {
+    width: 700px;
+  }
 }
 
 .block_username {
@@ -92,6 +124,12 @@ $mont: 'Montserrat', sans-serif;
   line-height: 17px;
   color: #000;
   font-family: $mont;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
 }
 
 .block_profession {
@@ -99,6 +137,11 @@ $mont: 'Montserrat', sans-serif;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.42);
   font-family: $mont;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .user_gallery {
@@ -127,6 +170,11 @@ $mont: 'Montserrat', sans-serif;
     width: 123px;
     height: 144px;
   }
+
+  @media (min-width: $tablet) {
+    width: 232px;
+    height: 270px;
+  }
 }
 
 
@@ -145,7 +193,7 @@ $mont: 'Montserrat', sans-serif;
   transition: all .3s ease;
 
   &:hover {
-    color: rgb(101, 255, 42);
+    color: rgb(251, 255, 253);
   }
 
   &:focus {
@@ -155,6 +203,10 @@ $mont: 'Montserrat', sans-serif;
     color: #fff;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
 }
 
 .emodzi_box {
@@ -162,6 +214,11 @@ $mont: 'Montserrat', sans-serif;
   height: 100%;
   position: relative;
   transform: scale(1.5);
+
+  @media (min-width: $tablet) {
+    left: 50%;
+    transform: translateX(-10%) translateY(-200px) scale(1.5);
+  }
 }
 
 .emodzi {

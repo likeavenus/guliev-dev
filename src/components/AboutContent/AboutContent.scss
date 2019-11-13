@@ -1,0 +1,36 @@
+$tablet: 768px;
+
+.block {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    width: 700px;
+  }
+}
+
+.block_title {
+  font-size: 18px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 15px;
+  }
+}
+
+.block_title_autor {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.block_info_text {
+  margin-bottom: 20px;
+  font-size: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}

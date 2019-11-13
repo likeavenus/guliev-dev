@@ -4,7 +4,6 @@ $tablet: 768px;
   padding-top: 50px;
   background: url("./img/bg2.jpg") no-repeat center / cover;
   position: relative;
-  height: calc(100vh - 50px);
 
   &:before {
     content: '';
@@ -15,6 +14,11 @@ $tablet: 768px;
     top: 0;
 
     background: rgba(255, 255, 255, .7);
+  }
+
+  @media (min-width: $tablet) {
+
+    height: calc(100vh - 50px);
   }
 }
 

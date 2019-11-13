@@ -14,3 +14,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+* {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+}

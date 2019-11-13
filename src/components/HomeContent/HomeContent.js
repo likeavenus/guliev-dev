@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import styles from './HomeContent.scss';
-
 import elon from './img/elon.png';
+
+import {Link} from 'react-router-dom';
 
 export default class HomeContent extends Component {
     constructor(props) {
@@ -41,6 +42,21 @@ export default class HomeContent extends Component {
                     id: 3,
                     src: require('./img/3.png'),
                     emodzi: 'fire'
+                },
+                {
+                    id: 4,
+                    src: require('./img/4.png'),
+                    emodzi: 'salt'
+                },
+                {
+                    id: 5,
+                    src: require('./img/5.png'),
+                    emodzi: 'bomb'
+                },
+                {
+                    id: 6,
+                    src: require('./img/6.png'),
+                    emodzi: 'spider'
                 }
             ]
         }
@@ -61,6 +77,21 @@ export default class HomeContent extends Component {
                     });
                     break;
                 case 'fire':
+                    this.setState({
+                        emodzi: emodzi
+                    });
+                    break;
+                case 'salt':
+                    this.setState({
+                        emodzi: emodzi
+                    });
+                    break;
+                case 'bomb':
+                    this.setState({
+                        emodzi: emodzi
+                    });
+                    break;
+                case 'spider':
                     this.setState({
                         emodzi: emodzi
                     });
@@ -94,101 +125,51 @@ export default class HomeContent extends Component {
         });
 
         let emodziElem = null;
+        const emodziArray = [];
+
+        function getActualEmodzi(emodzi, emodziSymbol) {
+            for (let i = 0; i < 50; i++) {
+                emodziArray.push(<span key={i} aria-label={emodzi} role={'img'} className={styles.emodzi}>{emodziSymbol}</span>);
+            }
+            return emodziElem = <div className={styles.emodzi_box}>
+                {emodziArray}
+            </div>;
+        }
 
         switch (emodzi) {
             case 'roflan':
-                emodziElem = <div className={styles.emodzi_box}>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                    <div className={styles.emodzi}>🤪</div>
-                </div>;
+                getActualEmodzi(emodzi, '🤪');
                 break;
             case 'love':
-                emodziElem = <div className={styles.emodzi_box}>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                    <div className={styles.emodzi}>❤️</div>
-                </div>;
+                getActualEmodzi(emodzi, '❤️');
                 break;
             case 'fire':
-                emodziElem = <div className={styles.emodzi_box}>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                    <div className={styles.emodzi}>🔥</div>
-                </div>;
+                getActualEmodzi(emodzi, '🔥');
+                break;
+            case 'salt':
+                getActualEmodzi(emodzi, '🧂');
+                break;
+            case 'bomb':
+                getActualEmodzi(emodzi, '💣');
+                break;
+            case 'spider':
+                getActualEmodzi(emodzi, '🕷️');
                 break;
             case null:
                 emodziElem = null;
+                break;
             default:
                 console.log('default');
         }
 
+        let galleryBox = <div className={styles.user_gallery}>
+            {photosArr}
+        </div>
+        if (emodzi !== null) {
+            galleryBox = <div className={`${styles.user_gallery} ${styles.active}`}>
+                {photosArr}
+            </div>
+        }
 
         return (
             <div className={styles.block}>
@@ -205,11 +186,10 @@ export default class HomeContent extends Component {
                     <div className={styles.block_profession}>Front-end developer</div>
                 </div>
 
-                <div className={styles.user_gallery}>
-                    {photosArr}
-                </div>
-
+                {galleryBox}
                 {emodziElem}
+
+                <Link className={styles.block_link} to={'/about'}>Обо мне</Link>
             </div>
         );
     }

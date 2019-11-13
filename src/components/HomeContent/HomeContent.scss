@@ -98,14 +98,20 @@ $tablet: 768px;
 
 .user_gallery {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: 27px;
+
+  &.active {
+    pointer-events: none;
+  }
 }
 
 .user_photo_wrap {
   width: 106px;
   height: 128px;
   cursor: pointer;
+  margin-bottom: 2px;
 
   & img {
     width: 100%;
@@ -118,16 +124,45 @@ $tablet: 768px;
   }
 }
 
+
+.block_link {
+  width: 125px;
+  height: 50px;
+  margin: 0 auto;
+  background: #6557FD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &:hover {
+    color: rgb(101, 255, 42);
+  }
+
+  &:focus {
+    color: #fff;
+  }
+  &:active {
+    color: #fff;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
 .emodzi_box {
   width: 100%;
   height: 100%;
   position: relative;
+  transform: scale(1.5);
+}
 
-  & div {
-    position: absolute;
-    left: 0;
-    bottom: -200px;
-  }
+.emodzi {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
 }
 
 @keyframes emodzi {
@@ -140,7 +175,7 @@ $tablet: 768px;
     opacity: 1;
   }
 
-  70% {
+  75% {
     transform: translateY(-280px);
     opacity: 0;
   }
@@ -152,133 +187,305 @@ $tablet: 768px;
 }
 
 .emodzi:nth-child(1) {
-  animation: emodzi 1.5s ease forwards;
+  animation: emodzi 2s ease-in forwards;
   bottom: -100px;
+  left: 100px;
 }
 
 .emodzi:nth-child(2) {
-  animation: emodzi 1.8s ease forwards;
+  animation: emodzi 2.3s ease-in forwards;
   bottom: -120px;
+  left: 200px;
 }
 
 .emodzi:nth-child(3) {
-  animation: emodzi 1.9s ease forwards;
+  animation: emodzi 2.4s ease-in forwards;
   bottom: -160px;
+  left: 120px;
 }
 
 .emodzi:nth-child(4) {
-  animation: emodzi 1.4s ease forwards;
+  animation: emodzi 1.9s ease-in forwards;
   bottom: -110px;
+  left: 130px;
 }
 
 .emodzi:nth-child(5) {
-  animation: emodzi 1.6s ease forwards;
+  animation: emodzi 2.1s ease-in forwards;
   bottom: -130px;
+  left: 140px;
 }
 
 .emodzi:nth-child(6) {
-  animation: emodzi 2.3s ease forwards;
+  animation: emodzi 2.8s ease-in forwards;
   bottom: -200px;
+  left: 22px;
 }
 
 .emodzi:nth-child(7) {
-  animation: emodzi 2s ease forwards;
+  animation: emodzi 2.5s ease-in forwards;
   bottom: -170px;
+  left: 90px;
 }
 
 .emodzi:nth-child(8) {
-  animation: emodzi 2.1s ease forwards;
+  animation: emodzi 2.6s ease-in forwards;
   bottom: -180px;
+  left: 190px;
 }
 
 .emodzi:nth-child(9) {
-  animation: emodzi 1.6s ease forwards;
+  animation: emodzi 2.1s ease-in forwards;
   bottom: -130px;
+  left: 11px;
 }
 
 .emodzi:nth-child(10) {
-  animation: emodzi 1.6s ease forwards;
+  animation: emodzi 2.1s ease-in forwards;
   bottom: -130px;
+  left: 220px;
 }
 
 .emodzi:nth-child(11) {
-  animation: emodzi 1.4s ease forwards;
+  animation: emodzi 1.9s ease-in forwards;
   bottom: -110px;
+  left: 50px;
 }
 
 .emodzi:nth-child(12) {
-  animation: emodzi 1.7s ease forwards;
+  animation: emodzi 2.2s ease-in forwards;
   bottom: -145px;
+  left: 260px;
 }
 
 .emodzi:nth-child(13) {
-  animation: emodzi 1.9s ease forwards;
+  animation: emodzi 2.4s ease-in forwards;
   bottom: -165px;
+  left: 280px;
 }
 
 .emodzi:nth-child(14) {
-  animation: emodzi 2.2s ease forwards;
+  animation: emodzi 2.7s ease-in forwards;
   bottom: -190px;
+  left: 210px;
 }
 
 .emodzi:nth-child(15) {
-  animation: emodzi 2s ease forwards;
+  animation: emodzi 2.5s ease-in forwards;
   bottom: -170px;
+  left: 280px;
 }
 
 .emodzi:nth-child(16) {
-  animation: emodzi 2.2s ease forwards;
+  animation: emodzi 2.7s ease-in forwards;
   bottom: -190px;
+  left: 150px;
 }
 
 .emodzi:nth-child(17) {
-  animation: emodzi 1.8s ease forwards;
+  animation: emodzi 2.3s ease-in forwards;
   bottom: -150px;
+  left: 130px;
 }
 
 .emodzi:nth-child(18) {
-  animation: emodzi 2.1s ease forwards;
+  animation: emodzi 2.6s ease-in forwards;
   bottom: -180px;
+  left: 160px;
 }
 
 .emodzi:nth-child(19) {
-  animation: emodzi 1.5s ease forwards;
+  animation: emodzi 2s ease-in forwards;
   bottom: -120px;
+  left: 190px;
 }
 
 .emodzi:nth-child(20) {
-  animation: emodzi 2s ease forwards;
+  animation: emodzi 2.5s ease-in forwards;
   bottom: -175px;
+  left: 265px;
 }
 
 .emodzi:nth-child(21) {
-  animation: emodzi 1.8s ease forwards;
+  animation: emodzi 2.3s ease-in forwards;
   bottom: -150px;
+  left: 100px;
 }
 
 .emodzi:nth-child(22) {
-  animation: emodzi 2.3s ease forwards;
+  animation: emodzi 2.8s ease-in forwards;
   bottom: -200px;
+  left: 40px;
 }
 
 .emodzi:nth-child(23) {
-  animation: emodzi 1.7s ease forwards;
+  animation: emodzi 2.2s ease-in forwards;
   bottom: -140px;
+  left: 66px;
 }
 
 .emodzi:nth-child(24) {
-  animation: emodzi 2s ease forwards;
+  animation: emodzi 2.5s ease-in forwards;
   bottom: -170px;
+  left: 70px;
 }
 
 .emodzi:nth-child(25) {
-  animation: emodzi 1.6s ease forwards;
+  animation: emodzi 2.1s ease-in forwards;
   bottom: -130px;
+  left: 180px;
 }
 
-@for $i from 1 through 25 {
-  .emodzi:nth-child(#{$i}) {
-    left: calc(#{$i} * 11px);
-  }
+.emodzi:nth-child(26) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -210px;
+  left: 270px;
 }
+
+.emodzi:nth-child(27) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -240px;
+  left: 200px;
+}
+
+.emodzi:nth-child(28) {
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -210px;
+  left: 10px;
+}
+
+.emodzi:nth-child(29) {
+  animation: emodzi 1.7s ease-in forwards;
+  bottom: -220px;
+  left: 150px;
+}
+
+.emodzi:nth-child(30) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -190px;
+  left: 190px;
+}
+
+.emodzi:nth-child(31) {
+  animation: emodzi 1.7s ease-in forwards;
+  bottom: -110px;
+  left: 180px;
+}
+
+.emodzi:nth-child(32) {
+  animation: emodzi 3s ease-in forwards;
+  bottom: -150px;
+  left: 230px;
+}
+
+.emodzi:nth-child(33) {
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -140px;
+  left: 190px;
+}
+
+.emodzi:nth-child(34) {
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -70px;
+  left: 40px;
+}
+
+.emodzi:nth-child(35) {
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -120px;
+  left: 60px;
+}
+
+.emodzi:nth-child(36) {
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -200px;
+  left: 90px;
+}
+
+.emodzi:nth-child(37) {
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -150px;
+  left: 280px;
+}
+
+.emodzi:nth-child(38) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -160px;
+  left: 260px;
+}
+
+.emodzi:nth-child(39) {
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -110px;
+  left: 140px;
+}
+
+.emodzi:nth-child(40) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -100px;
+  left: 20px;
+}
+
+.emodzi:nth-child(41) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -80px;
+  left: 200px;
+}
+
+.emodzi:nth-child(42) {
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -60px;
+  left: 80px;
+}
+
+.emodzi:nth-child(43) {
+  animation: emodzi 1.5s ease-in forwards;
+  bottom: -100px;
+  left: 140px;
+}
+
+.emodzi:nth-child(44) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -125px;
+  left: 70px;
+}
+
+.emodzi:nth-child(45) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -145px;
+  left: 210px;
+}
+
+.emodzi:nth-child(46) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -125px;
+  left: 70px;
+}
+
+.emodzi:nth-child(47) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -160px;
+  left: 170px;
+}
+
+.emodzi:nth-child(48) {
+  animation: emodzi 2.4s ease-in forwards;
+  bottom: -111px;
+  left: 280px;
+}
+
+.emodzi:nth-child(49) {
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -170px;
+  left: 175px;
+}
+
+.emodzi:nth-child(50) {
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -190px;
+  left: 240px;
+}
+
+
+
 

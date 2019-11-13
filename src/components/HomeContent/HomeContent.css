@@ -76,13 +76,17 @@
 
 .user_gallery {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 27px; }
+  .user_gallery.active {
+    pointer-events: none; }
 
 .user_photo_wrap {
   width: 106px;
   height: 128px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 2px; }
   .user_photo_wrap img {
     width: 100%;
     height: 100%; }
@@ -91,14 +95,37 @@
       width: 123px;
       height: 144px; } }
 
+.block_link {
+  width: 125px;
+  height: 50px;
+  margin: 0 auto;
+  background: #6557FD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all .3s ease; }
+  .block_link:hover {
+    color: #65ff2a; }
+  .block_link:focus {
+    color: #fff; }
+  .block_link:active {
+    color: #fff;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
 .emodzi_box {
   width: 100%;
   height: 100%;
-  position: relative; }
-  .emodzi_box div {
-    position: absolute;
-    left: 0;
-    bottom: -200px; }
+  position: relative;
+  transform: scale(1.5); }
+
+.emodzi {
+  position: absolute;
+  left: 0;
+  bottom: -200px; }
 
 @keyframes emodzi {
   0% {
@@ -106,185 +133,260 @@
     transform: translateY(0px); }
   50% {
     opacity: 1; }
-  70% {
+  75% {
     transform: translateY(-280px);
     opacity: 0; }
   100% {
     opacity: 0;
     transform: translateY(-280px); } }
 .emodzi:nth-child(1) {
-  animation: emodzi 1.5s ease forwards;
-  bottom: -100px; }
+  animation: emodzi 2s ease-in forwards;
+  bottom: -100px;
+  left: 100px; }
 
 .emodzi:nth-child(2) {
-  animation: emodzi 1.8s ease forwards;
-  bottom: -120px; }
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -120px;
+  left: 200px; }
 
 .emodzi:nth-child(3) {
-  animation: emodzi 1.9s ease forwards;
-  bottom: -160px; }
+  animation: emodzi 2.4s ease-in forwards;
+  bottom: -160px;
+  left: 120px; }
 
 .emodzi:nth-child(4) {
-  animation: emodzi 1.4s ease forwards;
-  bottom: -110px; }
+  animation: emodzi 1.9s ease-in forwards;
+  bottom: -110px;
+  left: 130px; }
 
 .emodzi:nth-child(5) {
-  animation: emodzi 1.6s ease forwards;
-  bottom: -130px; }
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -130px;
+  left: 140px; }
 
 .emodzi:nth-child(6) {
-  animation: emodzi 2.3s ease forwards;
-  bottom: -200px; }
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -200px;
+  left: 22px; }
 
 .emodzi:nth-child(7) {
-  animation: emodzi 2s ease forwards;
-  bottom: -170px; }
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -170px;
+  left: 90px; }
 
 .emodzi:nth-child(8) {
-  animation: emodzi 2.1s ease forwards;
-  bottom: -180px; }
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -180px;
+  left: 190px; }
 
 .emodzi:nth-child(9) {
-  animation: emodzi 1.6s ease forwards;
-  bottom: -130px; }
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -130px;
+  left: 11px; }
 
 .emodzi:nth-child(10) {
-  animation: emodzi 1.6s ease forwards;
-  bottom: -130px; }
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -130px;
+  left: 220px; }
 
 .emodzi:nth-child(11) {
-  animation: emodzi 1.4s ease forwards;
-  bottom: -110px; }
+  animation: emodzi 1.9s ease-in forwards;
+  bottom: -110px;
+  left: 50px; }
 
 .emodzi:nth-child(12) {
-  animation: emodzi 1.7s ease forwards;
-  bottom: -145px; }
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -145px;
+  left: 260px; }
 
 .emodzi:nth-child(13) {
-  animation: emodzi 1.9s ease forwards;
-  bottom: -165px; }
+  animation: emodzi 2.4s ease-in forwards;
+  bottom: -165px;
+  left: 280px; }
 
 .emodzi:nth-child(14) {
-  animation: emodzi 2.2s ease forwards;
-  bottom: -190px; }
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -190px;
+  left: 210px; }
 
 .emodzi:nth-child(15) {
-  animation: emodzi 2s ease forwards;
-  bottom: -170px; }
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -170px;
+  left: 280px; }
 
 .emodzi:nth-child(16) {
-  animation: emodzi 2.2s ease forwards;
-  bottom: -190px; }
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -190px;
+  left: 150px; }
 
 .emodzi:nth-child(17) {
-  animation: emodzi 1.8s ease forwards;
-  bottom: -150px; }
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -150px;
+  left: 130px; }
 
 .emodzi:nth-child(18) {
-  animation: emodzi 2.1s ease forwards;
-  bottom: -180px; }
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -180px;
+  left: 160px; }
 
 .emodzi:nth-child(19) {
-  animation: emodzi 1.5s ease forwards;
-  bottom: -120px; }
+  animation: emodzi 2s ease-in forwards;
+  bottom: -120px;
+  left: 190px; }
 
 .emodzi:nth-child(20) {
-  animation: emodzi 2s ease forwards;
-  bottom: -175px; }
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -175px;
+  left: 265px; }
 
 .emodzi:nth-child(21) {
-  animation: emodzi 1.8s ease forwards;
-  bottom: -150px; }
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -150px;
+  left: 100px; }
 
 .emodzi:nth-child(22) {
-  animation: emodzi 2.3s ease forwards;
-  bottom: -200px; }
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -200px;
+  left: 40px; }
 
 .emodzi:nth-child(23) {
-  animation: emodzi 1.7s ease forwards;
-  bottom: -140px; }
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -140px;
+  left: 66px; }
 
 .emodzi:nth-child(24) {
-  animation: emodzi 2s ease forwards;
-  bottom: -170px; }
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -170px;
+  left: 70px; }
 
 .emodzi:nth-child(25) {
-  animation: emodzi 1.6s ease forwards;
-  bottom: -130px; }
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -130px;
+  left: 180px; }
 
-.emodzi:nth-child(1) {
-  left: calc(1 * 11px); }
+.emodzi:nth-child(26) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -210px;
+  left: 270px; }
 
-.emodzi:nth-child(2) {
-  left: calc(2 * 11px); }
+.emodzi:nth-child(27) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -240px;
+  left: 200px; }
 
-.emodzi:nth-child(3) {
-  left: calc(3 * 11px); }
+.emodzi:nth-child(28) {
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -210px;
+  left: 10px; }
 
-.emodzi:nth-child(4) {
-  left: calc(4 * 11px); }
+.emodzi:nth-child(29) {
+  animation: emodzi 1.7s ease-in forwards;
+  bottom: -220px;
+  left: 150px; }
 
-.emodzi:nth-child(5) {
-  left: calc(5 * 11px); }
+.emodzi:nth-child(30) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -190px;
+  left: 190px; }
 
-.emodzi:nth-child(6) {
-  left: calc(6 * 11px); }
+.emodzi:nth-child(31) {
+  animation: emodzi 1.7s ease-in forwards;
+  bottom: -110px;
+  left: 180px; }
 
-.emodzi:nth-child(7) {
-  left: calc(7 * 11px); }
+.emodzi:nth-child(32) {
+  animation: emodzi 3s ease-in forwards;
+  bottom: -150px;
+  left: 230px; }
 
-.emodzi:nth-child(8) {
-  left: calc(8 * 11px); }
+.emodzi:nth-child(33) {
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -140px;
+  left: 190px; }
 
-.emodzi:nth-child(9) {
-  left: calc(9 * 11px); }
+.emodzi:nth-child(34) {
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -70px;
+  left: 40px; }
 
-.emodzi:nth-child(10) {
-  left: calc(10 * 11px); }
+.emodzi:nth-child(35) {
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -120px;
+  left: 60px; }
 
-.emodzi:nth-child(11) {
-  left: calc(11 * 11px); }
+.emodzi:nth-child(36) {
+  animation: emodzi 2.7s ease-in forwards;
+  bottom: -200px;
+  left: 90px; }
 
-.emodzi:nth-child(12) {
-  left: calc(12 * 11px); }
+.emodzi:nth-child(37) {
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -150px;
+  left: 280px; }
 
-.emodzi:nth-child(13) {
-  left: calc(13 * 11px); }
+.emodzi:nth-child(38) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -160px;
+  left: 260px; }
 
-.emodzi:nth-child(14) {
-  left: calc(14 * 11px); }
+.emodzi:nth-child(39) {
+  animation: emodzi 2.2s ease-in forwards;
+  bottom: -110px;
+  left: 140px; }
 
-.emodzi:nth-child(15) {
-  left: calc(15 * 11px); }
+.emodzi:nth-child(40) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -100px;
+  left: 20px; }
 
-.emodzi:nth-child(16) {
-  left: calc(16 * 11px); }
+.emodzi:nth-child(41) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -80px;
+  left: 200px; }
 
-.emodzi:nth-child(17) {
-  left: calc(17 * 11px); }
+.emodzi:nth-child(42) {
+  animation: emodzi 2.3s ease-in forwards;
+  bottom: -60px;
+  left: 80px; }
 
-.emodzi:nth-child(18) {
-  left: calc(18 * 11px); }
+.emodzi:nth-child(43) {
+  animation: emodzi 1.5s ease-in forwards;
+  bottom: -100px;
+  left: 140px; }
 
-.emodzi:nth-child(19) {
-  left: calc(19 * 11px); }
+.emodzi:nth-child(44) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -125px;
+  left: 70px; }
 
-.emodzi:nth-child(20) {
-  left: calc(20 * 11px); }
+.emodzi:nth-child(45) {
+  animation: emodzi 2.1s ease-in forwards;
+  bottom: -145px;
+  left: 210px; }
 
-.emodzi:nth-child(21) {
-  left: calc(21 * 11px); }
+.emodzi:nth-child(46) {
+  animation: emodzi 2s ease-in forwards;
+  bottom: -125px;
+  left: 70px; }
 
-.emodzi:nth-child(22) {
-  left: calc(22 * 11px); }
+.emodzi:nth-child(47) {
+  animation: emodzi 2.6s ease-in forwards;
+  bottom: -160px;
+  left: 170px; }
 
-.emodzi:nth-child(23) {
-  left: calc(23 * 11px); }
+.emodzi:nth-child(48) {
+  animation: emodzi 2.4s ease-in forwards;
+  bottom: -111px;
+  left: 280px; }
 
-.emodzi:nth-child(24) {
-  left: calc(24 * 11px); }
+.emodzi:nth-child(49) {
+  animation: emodzi 2.5s ease-in forwards;
+  bottom: -170px;
+  left: 175px; }
 
-.emodzi:nth-child(25) {
-  left: calc(25 * 11px); }
+.emodzi:nth-child(50) {
+  animation: emodzi 2.8s ease-in forwards;
+  bottom: -190px;
+  left: 240px; }
 
 /*# sourceMappingURL=HomeContent.css.map */

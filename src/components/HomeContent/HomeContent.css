@@ -48,11 +48,13 @@
 .counter_top {
   font-size: 14px;
   line-height: 17px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif; }
 
 .counter_bot {
   font-size: 11px;
-  line-height: 13px; }
+  line-height: 13px;
+  font-family: "Montserrat", sans-serif; }
 
 .user_info {
   display: flex;
@@ -67,12 +69,14 @@
 .block_username {
   font-size: 14px;
   line-height: 17px;
-  color: #000; }
+  color: #000;
+  font-family: "Montserrat", sans-serif; }
 
 .block_profession {
   font-size: 13px;
   line-height: 16px;
-  color: rgba(0, 0, 0, 0.42); }
+  color: rgba(0, 0, 0, 0.42);
+  font-family: "Montserrat", sans-serif; }
 
 .user_gallery {
   display: flex;

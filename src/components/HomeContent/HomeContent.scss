@@ -1,4 +1,5 @@
 $tablet: 768px;
+$mont: 'Montserrat', sans-serif;
 
 .block {
   display: block;
@@ -65,11 +66,13 @@ $tablet: 768px;
   font-size: 14px;
   line-height: 17px;
   font-weight: bold;
+  font-family: $mont;
 }
 
 .counter_bot {
   font-size: 11px;
   line-height: 13px;
+  font-family: $mont;
 }
 
 .user_info {
@@ -88,12 +91,14 @@ $tablet: 768px;
   font-size: 14px;
   line-height: 17px;
   color: #000;
+  font-family: $mont;
 }
 
 .block_profession {
   font-size: 13px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.42);
+  font-family: $mont;
 }
 
 .user_gallery {

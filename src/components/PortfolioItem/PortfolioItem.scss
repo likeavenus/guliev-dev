@@ -1,4 +1,5 @@
 $tablet: 768px;
+$mont: 'Montserrat', sans-serif;
 
 .block {
   width: 100%;
@@ -53,6 +54,7 @@ $tablet: 768px;
 
 .block_title {
   margin-bottom: 10px;
+  font-family: $mont;
 }
 
 .block_img_box {
@@ -138,6 +140,7 @@ $tablet: 768px;
 
 .block_info {
   margin-bottom: 20px;
+  font-family: $mont;
 }
 
 .block_hashtags {
@@ -145,6 +148,10 @@ $tablet: 768px;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
+
+  & span {
+    font-family: $mont;
+  }
 }
 
 .block_hashtags {

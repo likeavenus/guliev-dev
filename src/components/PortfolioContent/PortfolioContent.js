@@ -55,7 +55,7 @@ export default class PortfolioContent extends Component {
                     href: 'https://htmlacademy.ru/',
                     imgSrc: require('./img/html.png'),
                     info: 'Наставничаю в Академии на HTML & CSS',
-                    hashtags: '#HTML, #CSS, #JavaScript'
+                    hashtags: '#HTML #CSS #JavaScript'
                 }
             ]
         }

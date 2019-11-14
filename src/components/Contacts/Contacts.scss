@@ -1,0 +1,21 @@
+$tablet: 768px;
+.block {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts_link {
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+}
+
+.block_text {
+  color: #fff;
+
+  @media (min-width: $tablet) {
+    color: #000;
+  }
+}

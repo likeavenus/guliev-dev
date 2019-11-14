@@ -10,6 +10,7 @@ export default class HomeContent extends Component {
 
         this.state = {
             emodzi: null,
+            stories: true,
             infoCounters: [
                 {
                     id: 1,
@@ -107,9 +108,26 @@ export default class HomeContent extends Component {
         }, 2000)
     };
 
+
+    handleOpenStories = () => {
+        if (this.state.stories !== null) {
+            this.setState({
+                stories: false
+            })
+        }
+    };
+
+    handleCloseStories = () => {
+        this.setState({
+            stories: null
+        })
+    };
+    
+    
+
     render() {
 
-        const {infoCounters, userPhotos, emodzi} = this.state;
+        const {infoCounters, userPhotos, emodzi, stories} = this.state;
 
         let infoArray = infoCounters.map((item) => {
             return <div key={item.id} className={styles.counter_info}>
@@ -164,17 +182,38 @@ export default class HomeContent extends Component {
 
         let galleryBox = <div className={styles.user_gallery}>
             {photosArr}
-        </div>
+        </div>;
         if (emodzi !== null) {
             galleryBox = <div className={`${styles.user_gallery} ${styles.active}`}>
                 {photosArr}
             </div>
         }
 
+        let blockAvatarStyles = styles.block_avatar;
+        let story = null;
+        if (!stories) {
+            blockAvatarStyles += ` ${styles.active}`;
+
+            story = <div className={styles.story_box}>
+                <button onClick={this.handleCloseStories} type={'button'} className={styles.story_close}>
+                    <span> </span>
+                    <span> </span>
+                </button>
+
+                <div className={styles.story_preview}>Скоро здесь появится офигительная история... но не сегодня</div>
+            </div>
+        }
+
+        if (stories === null) {
+            story = null;
+        }
+
         return (
             <div className={styles.block}>
+                {story}
+
                 <div className={styles.block_top_info}>
-                    <div className={styles.block_avatar}>
+                    <div onClick={this.handleOpenStories} className={blockAvatarStyles}>
                         <img src={elon} alt="Elon Mask"/>
                     </div>
                     <div className={styles.block_counters}>

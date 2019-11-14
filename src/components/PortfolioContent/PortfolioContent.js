@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from './PortfolioContent.scss';
 import PortfolioItem from '../PortfolioItem/PortfolioItem';
+import Contacts from "../Contacts/Contacts";
 
 export default class PortfolioContent extends Component {
     constructor(props) {
@@ -47,6 +48,14 @@ export default class PortfolioContent extends Component {
                     imgSrc: require('./img/leto.jpg'),
                     info: 'Разрабатывал главную страницу с анимациями',
                     hashtags: '#CSS Animations'
+                },
+                {
+                    id: 6,
+                    name: 'HTML Academy',
+                    href: 'https://htmlacademy.ru/',
+                    imgSrc: require('./img/html.png'),
+                    info: 'Наставничаю в Академии на HTML & CSS',
+                    hashtags: '#HTML, #CSS, #JavaScript'
                 }
             ]
         }
@@ -74,9 +83,10 @@ export default class PortfolioContent extends Component {
             <div className={styles.block}>
                 <div className={styles.block_wrapper}>
                     {projectsArray}
+
+                    <Contacts/>
                 </div>
 
-                <div className={styles.block}></div>
             </div>
         )
     }

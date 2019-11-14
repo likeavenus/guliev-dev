@@ -14,7 +14,7 @@ export default class AboutContent extends Component{
                     <p className={styles.block_info_text}>Основной стек технологий:</p>
                     <p className={styles.block_info_text}>HTML, CSS, JS;</p>
                     <p className={styles.block_info_text}>На основе этих технологий использую:</p>
-                    <p className={styles.block_info_text}>PUG, SCSS, Gulp, Webpack, React;</p>
+                    <p className={styles.block_info_text}>PUG, SCSS, Gulp, Webpack, React, БЭМ;</p>
                     <p className={styles.block_info_text}>Так же работал с Redux, но не плотно;</p>
                     <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-проекте;</p>
                     <p className={styles.block_info_text}>Знаю некоторые алгоритмы, благодаря книге "Грокаем Алгоритмы". Пока в процессе изучения;</p>

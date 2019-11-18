@@ -15,14 +15,15 @@ export default class AboutContent extends Component{
                     <p className={styles.block_info_text}>HTML, CSS, JS;</p>
                     <p className={styles.block_info_text}>На основе этих технологий использую:</p>
                     <p className={styles.block_info_text}>PUG, SCSS, Gulp, Webpack, React, БЭМ;</p>
+                    <p className={styles.block_info_text}>Использую только ES6;</p>
                     <p className={styles.block_info_text}>Так же работал с Redux, но не плотно;</p>
                     <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-проекте;</p>
                     <p className={styles.block_info_text}>Знаю некоторые алгоритмы, благодаря книге "Грокаем Алгоритмы". Пока в процессе изучения;</p>
                     <p className={styles.block_info_text}>Следующими в изучении будут:</p>
                     <p className={styles.block_info_text}>Паттерны проектирования, GLSL(WebGL), WebSocket, Node.js, React Native, Svetle, математика;</p>
-                    <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, Redux, WebPack;</p>
+                    <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, React/Redux, WebPack;</p>
                     <p className={styles.block_info_text}>Немного пробовал:</p>
-                    <p className={styles.block_info_text}>Node.js, Three.js</p>
+                    <p className={styles.block_info_text}>Node.js, Three.js;</p>
                     <p className={styles.block_info_text}>Глубоко убеждён, что не нужно самозабвенно изучать какой-либо фреймворк, не понимая как он работает внутри.</p>
                 </div>
             </div>

@@ -9,21 +9,13 @@ export default class PortfolioContent extends Component {
 
         this.state = {
             projects: [
-                // {
-                //     id: 1,
-                //     name: 'Мне нужна Швейцария',
-                //     href: 'http://switzerland.inbase.me/',
-                //     imgSrc: require('./img/switzerland.jpg'),
-                //     info: 'Сайт с несколькими страницами с освещением туристических мест в Швейцарии. Делал в паре с дизайнером строго по ТЗ.',
-                //     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
-                // },
                 {
-                    id: 5,
-                    name: 'Aurora Streaming Solutions',
-                    href: 'http://bk.auroraproduction.ru/',
-                    imgSrc: require('./img/aurora.png'),
-                    info: 'Разработал лэндинг для стриминговой компании',
-                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript #OnePageScroll'
+                    id: 1,
+                    name: 'Мне нужна Швейцария',
+                    href: 'http://switzerland.inbase.me/',
+                    imgSrc: require('./img/switzerland.jpg'),
+                    info: 'Туристический сайт о Швейцарии',
+                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
                 },
                 {
                     id: 2,
@@ -32,6 +24,14 @@ export default class PortfolioContent extends Component {
                     imgSrc: require('./img/kanban.png'),
                     info: 'Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.',
                     hashtags: "#JavaScript #Drag'n'Drop"
+                },
+                {
+                    id: 5,
+                    name: 'Aurora Streaming Solutions',
+                    href: 'http://bk.auroraproduction.ru/',
+                    imgSrc: require('./img/aurora.png'),
+                    info: 'Разработал лэндинг для стриминговой компании',
+                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript #OnePageScroll'
                 },
                 {
                     id: 3,

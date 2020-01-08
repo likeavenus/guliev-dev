@@ -26,6 +26,14 @@ export default class PortfolioContent extends Component {
                     hashtags: "#JavaScript #Drag'n'Drop"
                 },
                 {
+                    id: 7,
+                    name: 'Тестовое приложение на React+Redux',
+                    href: 'https://likeavenus.github.io/spa-dev/',
+                    imgSrc: require('./img/rr.png'),
+                    info: 'Один из выполненных мною тестов, с целью изучения Redux',
+                    hashtags: '#SASS, #JavaScript, #React, #Redux, #Webpack'
+                },
+                {
                     id: 5,
                     name: 'Aurora Streaming Solutions',
                     href: 'http://bk.auroraproduction.ru/',

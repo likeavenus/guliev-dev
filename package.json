@@ -1,5 +1,5 @@
 {
-  "name": "guliev-dev",
+  "name": "guliev",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://likeavenus.github.io/guliev/",
@@ -139,6 +139,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }

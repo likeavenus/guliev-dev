@@ -18,8 +18,8 @@ export default class AboutContent extends Component{
                     <p className={styles.block_info_text}>Использую только ES6;</p>
                     <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-проекте;</p>
                     <p className={styles.block_info_text}>Знаю некоторые алгоритмы, благодаря книге "Грокаем Алгоритмы". Пока в процессе изучения;</p>
-                    <p className={styles.block_info_text}>Следующими в изучении будут:</p>
-                    <p className={styles.block_info_text}>Паттерны проектирования, GLSL(WebGL), WebSocket, Node.js, React Native, Svetle, математика;</p>
+                    <p className={styles.block_info_text}>Далее планирую изучать:</p>
+                    <p className={styles.block_info_text}>Паттерны проектирования, ML(TensorFlow.js), GLSL(WebGL), WebSocket, Node.js, React Native, Svetle, математика;</p>
                     <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, React/Redux, WebPack;</p>
                     <p className={styles.block_info_text}>Немного пробовал:</p>
                     <p className={styles.block_info_text}>Node.js, Three.js;</p>

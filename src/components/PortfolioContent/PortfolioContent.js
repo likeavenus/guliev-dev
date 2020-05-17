@@ -26,7 +26,7 @@ export default class PortfolioContent extends Component {
                     hashtags: "#JavaScript #Drag'n'Drop"
                 },
                 {
-                    id: 7,
+                    id: 3,
                     name: 'Тестовое приложение на React+Redux',
                     href: 'https://likeavenus.github.io/spa-dev/',
                     imgSrc: require('./img/rr.png'),
@@ -34,7 +34,7 @@ export default class PortfolioContent extends Component {
                     hashtags: '#JavaScript, #React, #Redux, #Webpack, #SASS'
                 },
                 {
-                    id: 5,
+                    id: 4,
                     name: 'Aurora Streaming Solutions',
                     href: 'http://bk.auroraproduction.ru/',
                     imgSrc: require('./img/aurora.png'),
@@ -42,15 +42,15 @@ export default class PortfolioContent extends Component {
                     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript #OnePageScroll'
                 },
                 {
-                    id: 3,
-                    name: 'АкваПомощь',
-                    href: 'https://www.aquapomosh.ru/',
-                    imgSrc: require('./img/aqua.jpg'),
-                    info: <p className={styles.block_info}>Разрабатывал сайт по готовому дизайну для фирмы по ремонту / обслуживанию водоснабжающих агрегатов для частных домов</p>,
-                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
+                    id: 5,
+                    name: 'Thunder',
+                    href: 'https://likeavenus.github.io/Thunder/',
+                    imgSrc: require('./img/thunder.jpg'),
+                    info: <p className={styles.block_info}>Мини поделка на three.js</p>,
+                    hashtags: '#threeJS'
                 },
                 {
-                    id: 4,
+                    id: 6,
                     name: 'Leto',
                     href: 'https://likeavenus.github.io/Leto/',
                     imgSrc: require('./img/leto.jpg'),
@@ -58,13 +58,21 @@ export default class PortfolioContent extends Component {
                     hashtags: '#CSS Animations'
                 },
                 {
-                    id: 6,
+                    id: 7,
                     name: 'HTML Academy',
                     href: 'https://htmlacademy.ru/',
                     imgSrc: require('./img/html.png'),
                     info: <p className={styles.block_info}>Наставничаю в Академии на JavaScript 1 уровень, HTML&nbsp;&&nbsp;CSS</p>,
                     hashtags: '#HTML #CSS #JavaScript'
-                }
+                },
+                {
+                    id: 8,
+                    name: 'АкваПомощь',
+                    href: 'https://www.aquapomosh.ru/',
+                    imgSrc: require('./img/aqua.jpg'),
+                    info: <p className={styles.block_info}>Разрабатывал сайт по готовому дизайну для фирмы по ремонту / обслуживанию водоснабжающих агрегатов для частных домов</p>,
+                    hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
+                },
             ]
         }
     }

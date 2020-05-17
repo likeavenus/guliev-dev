@@ -1,4 +1,6 @@
 $tablet: 768px;
+$mont: 'Montserrat', sans-serif;
+
 .block {
   width: 100%;
   display: block;
@@ -21,7 +23,17 @@ $tablet: 768px;
   align-items: center;
   justify-content: flex-start;
 
+  @media (min-width: 375px) {
+    width: 300px;
+  }
+
   @media (min-width: 768px) {
     width: 100%;
   }
+}
+
+.block_info {
+  margin-bottom: 20px;
+  font-family: $mont;
+  width: 100%;
 }

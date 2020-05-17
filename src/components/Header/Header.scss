@@ -77,6 +77,12 @@ $tablet: 768px;
     }
   }
 
+
+  &.white {
+    & span {
+      background: #fff;
+    }
+  }
 }
 
 .button_top {

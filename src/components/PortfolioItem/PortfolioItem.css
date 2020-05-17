@@ -100,11 +100,6 @@
     .block_text_content {
       width: 480px; } }
 
-.block_info {
-  margin-bottom: 20px;
-  font-family: "Montserrat", sans-serif;
-  width: 100%; }
-
 .block_hashtags {
   display: flex;
   flex-direction: row;

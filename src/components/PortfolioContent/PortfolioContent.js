@@ -14,7 +14,7 @@ export default class PortfolioContent extends Component {
                     name: 'Мне нужна Швейцария',
                     href: 'http://switzerland.inbase.me/',
                     imgSrc: require('./img/switzerland.jpg'),
-                    info: 'Туристический сайт о Швейцарии',
+                    info: <p className={styles.block_info}>Туристический сайт о Швейцарии</p>,
                     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
                 },
                 {
@@ -22,7 +22,7 @@ export default class PortfolioContent extends Component {
                     name: 'Канбан-доска',
                     href: 'https://likeavenus.github.io/canban-test/',
                     imgSrc: require('./img/kanban.png'),
-                    info: 'Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.',
+                    info: <p className={styles.block_info}>Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.'</p>,
                     hashtags: "#JavaScript #Drag'n'Drop"
                 },
                 {
@@ -30,15 +30,15 @@ export default class PortfolioContent extends Component {
                     name: 'Тестовое приложение на React+Redux',
                     href: 'https://likeavenus.github.io/spa-dev/',
                     imgSrc: require('./img/rr.png'),
-                    info: 'Один из выполненных мною тестов, с целью изучения Redux',
-                    hashtags: '#SASS, #JavaScript, #React, #Redux, #Webpack'
+                    info: <p className={styles.block_info}>Один из выполненных мною тестов, с целью изучения Redux</p>,
+                    hashtags: '#JavaScript, #React, #Redux, #Webpack, #SASS'
                 },
                 {
                     id: 5,
                     name: 'Aurora Streaming Solutions',
                     href: 'http://bk.auroraproduction.ru/',
                     imgSrc: require('./img/aurora.png'),
-                    info: 'Разработал лэндинг для стриминговой компании',
+                    info: <p className={styles.block_info}>Разработал лэндинг для стриминговой компании</p>,
                     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript #OnePageScroll'
                 },
                 {
@@ -46,7 +46,7 @@ export default class PortfolioContent extends Component {
                     name: 'АкваПомощь',
                     href: 'https://www.aquapomosh.ru/',
                     imgSrc: require('./img/aqua.jpg'),
-                    info: 'Разрабатывал сайт по готовому дизайну для фирмы по ремонту / обслуживанию водоснабжающих агрегатов для частных домов',
+                    info: <p className={styles.block_info}>Разрабатывал сайт по готовому дизайну для фирмы по ремонту / обслуживанию водоснабжающих агрегатов для частных домов</p>,
                     hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
                 },
                 {
@@ -54,7 +54,7 @@ export default class PortfolioContent extends Component {
                     name: 'Leto',
                     href: 'https://likeavenus.github.io/Leto/',
                     imgSrc: require('./img/leto.jpg'),
-                    info: 'Разрабатывал главную страницу с анимациями',
+                    info: <p className={styles.block_info}>Разрабатывал главную страницу с анимациями</p>,
                     hashtags: '#CSS Animations'
                 },
                 {
@@ -62,7 +62,7 @@ export default class PortfolioContent extends Component {
                     name: 'HTML Academy',
                     href: 'https://htmlacademy.ru/',
                     imgSrc: require('./img/html.png'),
-                    info: 'Наставничаю в Академии на HTML & CSS',
+                    info: <p className={styles.block_info}>Наставничаю в Академии на JavaScript 1 уровень, HTML&nbsp;&&nbsp;CSS</p>,
                     hashtags: '#HTML #CSS #JavaScript'
                 }
             ]
@@ -73,7 +73,7 @@ export default class PortfolioContent extends Component {
         const {projects} = this.state;
         const projectsArray = [];
 
-        projects.map((item)=> {
+        projects.map(item => {
             return projectsArray.push(
                 <PortfolioItem
                     key={item.id}

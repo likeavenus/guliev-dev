@@ -180,13 +180,16 @@ export default class HomeContent extends Component {
                 console.log('default');
         }
 
-        let galleryBox = <div className={styles.user_gallery}>
-            {photosArr}
-        </div>;
-        if (emodzi !== null) {
-            galleryBox = <div className={`${styles.user_gallery} ${styles.active}`}>
+        let galleryBox = (
+            <div className={styles.user_gallery}>
                 {photosArr}
-            </div>
+            </div>);
+        if (emodzi !== null) {
+            galleryBox = (
+                <div className={`${styles.user_gallery} ${styles.active}`}>
+                    {photosArr}
+                </div>
+            )
         }
 
         let blockAvatarStyles = styles.block_avatar;
@@ -194,14 +197,16 @@ export default class HomeContent extends Component {
         if (!stories) {
             blockAvatarStyles += ` ${styles.active}`;
 
-            story = <div className={styles.story_box}>
-                <button onClick={this.handleCloseStories} type={'button'} className={styles.story_close}>
-                    <span> </span>
-                    <span> </span>
-                </button>
+            story = (
+                <div className={styles.story_box}>
+                    <button onClick={this.handleCloseStories} type={'button'} className={styles.story_close}>
+                        <span> </span>
+                        <span> </span>
+                     </button>
 
-                <div className={styles.story_preview}>Скоро здесь появится офигительная история... но не сегодня</div>
-            </div>
+                    <div className={styles.story_preview}>Скоро здесь появится офигительная история... но не сегодня</div>
+                </div>
+            )
         }
 
         if (stories === null) {

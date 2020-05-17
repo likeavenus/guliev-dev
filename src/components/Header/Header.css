@@ -49,6 +49,8 @@
   @media (min-width: 768px) {
     .header_button span {
       background: #000; } }
+  .header_button.white span {
+    background: #fff; }
 
 .button_top {
   position: absolute;

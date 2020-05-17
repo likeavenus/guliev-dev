@@ -11,10 +11,6 @@
     left: 0;
     top: 0;
     background: rgba(255, 255, 255, 0.7); }
-  @media (min-width: 1440px) {
-    .block {
-      padding-bottom: 0;
-      height: calc(100vh - 50px); } }
 
 .block_wrapper {
   width: 280px;

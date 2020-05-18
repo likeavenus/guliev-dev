@@ -7,6 +7,14 @@ $tablet: 768px;
   left: 0;
   top: 0;
   z-index: 30;
+  
+  &:hover {
+    .header_button {
+      span {
+        background: #000;
+      }
+    }
+  }
 }
 
 
@@ -121,6 +129,7 @@ $tablet: 768px;
   display: block;
   padding: 20px 0;
   position: relative;
+  transition: all .15s ease;
 
   &:after {
     content: '';
@@ -131,6 +140,11 @@ $tablet: 768px;
     width: 80%;
     height: 1px;
     background: rgba(0, 172, 235, 0.15);
+  }
+  
+  &:hover {
+    background: #4293e6;
+    color: #fff;
   }
 }
 

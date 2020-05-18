@@ -14,12 +14,12 @@ export default function AboutContent() {
                 <p className={styles.block_info_text}>На основе этих технологий использую:</p>
                 <p className={styles.block_info_text}>React, Redux, Node.js, PUG, SCSS, Gulp, Webpack, Canvas, БЭМ;</p>
                 <p className={styles.block_info_text}>Использую только ES6+;</p>
-                <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-проекте;</p>
-                <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, Node.js, React/Redux, WebPack;</p>
+                <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-&nbsp;проекте;</p>
+                <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, Node.js, React/Redux, Webpack;</p>
                 <p className={styles.block_info_text}>Немного пробовал:</p>
                 <p className={styles.block_info_text}>Three.js, Tensorflow.js;</p>
-                <p className={styles.block_info_text}>Есть базовое представление об алгоритмах. Пока еще в процессе изучения;</p>
-                <p className={styles.block_info_text}>Опыт использования других языков: Python, для машинного обучения;</p>
+                <p className={styles.block_info_text}>Есть базовые знания классических алгоритмов. Пока в процессе изучения;</p>
+                <p className={styles.block_info_text}>Опыт использования других языков: Python, для&nbsp;машинного&nbsp;обучения;</p>
                 <p className={styles.block_info_text}>С большим интересом смотрю на: машинное обучение, three.js, разработка больших, сложных сервисов;</p>
 
                 <p className={styles.block_info_text}>Глубоко убеждён, что не нужно самозабвенно изучать какой-либо фреймворк, не понимая как он работает внутри.</p>

@@ -129,17 +129,21 @@ export default class HomeContent extends Component {
 
         const {infoCounters, userPhotos, emodzi, stories} = this.state;
 
-        let infoArray = infoCounters.map((item) => {
-            return <div key={item.id} className={styles.counter_info}>
-                <div className={styles.counter_top}>{item.counter}</div>
-                <div className={styles.counter_bot}>{item.counterName}</div>
-            </div>
+        let infoArray = infoCounters.map(item => {
+            return (
+                <div key={item.id} className={styles.counter_info}>
+                    <div className={styles.counter_top}>{item.counter}</div>
+                    <div className={styles.counter_bot}>{item.counterName}</div>
+                </div>
+            )
         });
 
-        let photosArr = userPhotos.map((item) => {
-            return <div onClick={(()=> {this.handleOnAvatarClick(item.emodzi)})} key={item.id} className={styles.user_photo_wrap}>
-                <img src={item.src} alt=""/>
-            </div>
+        let photosArr = userPhotos.map(item => {
+            return (
+                <div onClick={(()=> {this.handleOnAvatarClick(item.emodzi)})} key={item.id} className={styles.user_photo_wrap}>
+                    <img src={item.src} alt=""/>
+                </div>
+            )
         });
 
         let emodziElem = null;

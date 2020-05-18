@@ -6,13 +6,8 @@ $mont: 'Montserrat', sans-serif;
   display: block;
   margin: 0 auto;
   padding-top: 50px;
-  background: #266bc7;
   overflow: hidden;
   position: relative;
-  
-  @media (min-width: $tablet) {
-    background: #fff;
-  }
 }
 
 .block_wrapper {

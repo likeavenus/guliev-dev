@@ -5,14 +5,12 @@ import {
     Route,
 } from "react-router-dom";
 import styles from './App.scss';
-import Header from './components/Header/Header';
+import { Header } from './components/Header/Header';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
-
 export default class App extends Component {
-
     render() {
         return (
             <HashRouter>

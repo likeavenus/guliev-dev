@@ -63,8 +63,7 @@ export default class HomeContent extends Component {
         }
     }
 
-
-    handleOnAvatarClick = (emodzi) => {
+    handleOnAvatarClick = emodzi => {
         if (this.state.emodzi === null) {
             switch (emodzi) {
                 case 'roflan':
@@ -122,8 +121,6 @@ export default class HomeContent extends Component {
             stories: null
         })
     };
-    
-    
 
     render() {
 

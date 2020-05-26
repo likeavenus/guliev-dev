@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styles from './Contacts.scss';
 
 export default class Contacts extends Component {
@@ -18,10 +18,12 @@ export default class Contacts extends Component {
             }
         ];
 
-        const contacts = contactsArr.map((item) => {
-            return <a key={item.id} href={item.href} className={styles.contacts_link}>
-                <img src={item.imgSrc} alt={item.alt}/>
-            </a>
+        const contacts = contactsArr.map(item => {
+            return (
+                <a key={item.id} href={item.href} className={styles.contacts_link}>
+                    <img src={item.imgSrc} alt={item.alt}/>
+                </a>
+            )
         });
         return (
             <div className={styles.block}>

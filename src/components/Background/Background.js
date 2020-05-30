@@ -8,14 +8,13 @@ export default class Background extends Component {
         this.canvas = React.createRef();
     }
 
-    drawCube = () => {
-        console.log(THREE);
+    draw = () => {
         const canvas = this.canvas.current;
     };
 
 
     componentDidMount() {
-        this.drawCube();
+        this.draw();
     }
 
     render() {

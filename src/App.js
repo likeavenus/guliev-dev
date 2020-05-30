@@ -9,12 +9,14 @@ import { Header } from './components/Header/Header';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Background from './components/Background/Background';
 
 export default class App extends Component {
     render() {
         return (
             <HashRouter>
                 <div className={styles.App}>
+                    <Background/>
                     <Header/>
                     <Switch>
                         <Route exact path={'/'} component={Home}/>

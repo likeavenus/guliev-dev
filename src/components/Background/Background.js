@@ -80,7 +80,9 @@ export default class Background extends Component {
 
         function animate() {
             requestAnimationFrame(animate);
-            ctx.fillStyle = 'rgba(0, 0, 0, .05)';
+            setTimeout(() => {
+                ctx.fillStyle = 'rgba(0, 0, 0, .05)';
+            }, 100)
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             particles.forEach(particle => {
                 particle.update();

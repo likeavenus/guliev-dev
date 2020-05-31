@@ -2,20 +2,28 @@ import styles from "./PortfolioContent.scss";
 import React from 'react';
 export const projects = [
     {
+        id: 2,
+        name: 'Канбан-доска',
+        href: 'https://likeavenus.github.io/canban-test/',
+        imgSrc: require('./img/kanban.png'),
+        info: <p className={styles.block_info}>Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.</p>,
+        hashtags: "#JavaScript #Drag'n'Drop"
+    },
+    {
+        id: 0,
+        name: 'Оптимизатор изображений',
+        href: 'https://rhubarb-pie-00971.herokuapp.com/',
+        imgSrc: require('./img/gears.png'),
+        info: <p className={styles.block_info}>Написал оптимизатор изображений на Node.js <br/> Можно заливать множество изображений и получать готовые, обрезанные картинки для продакшена. С точки зрения бэкенда приложение не выдержит множество пользователей. Благодаря этому кейсу базово изучил Node.js <br/> Дизайн сделал простецкий, возможно в будущем приложение будет проработано.</p>,
+        hashtags: '#JavaScript #Node.js'
+    },
+    {
         id: 1,
         name: 'Мне нужна Швейцария',
         href: 'http://switzerland.inbase.me/',
         imgSrc: require('./img/switzerland.jpg'),
         info: <p className={styles.block_info}>Туристический сайт о Швейцарии</p>,
         hashtags: '#Gulp #PUG #SASS #JQuery #JavaScript'
-    },
-    {
-        id: 2,
-        name: 'Канбан-доска',
-        href: 'https://likeavenus.github.io/canban-test/',
-        imgSrc: require('./img/kanban.png'),
-        info: <p className={styles.block_info}>Разработал свою канбан доску, на чистом JavaScript, без бэкенда. В будущем возможны доработки. В первую очередь меня интересовало качество и процесс собственной реализации.'</p>,
-        hashtags: "#JavaScript #Drag'n'Drop"
     },
     {
         id: 3,

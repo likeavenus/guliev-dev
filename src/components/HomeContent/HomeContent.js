@@ -14,17 +14,17 @@ export default class HomeContent extends Component {
             infoCounters: [
                 {
                     id: 1,
-                    counter: 603,
+                    counter: 250,
                     counterName: 'Публикации'
                 },
                 {
                     id: 2,
-                    counter: 103,
+                    counter: 520,
                     counterName: 'Подписчики'
                 },
                 {
                     id: 3,
-                    counter: 147,
+                    counter: 13,
                     counterName: 'Подписки'
                 },
             ],
@@ -36,7 +36,7 @@ export default class HomeContent extends Component {
                 },
                 {
                     id: 2,
-                    src: require('./img/2.png'),
+                    src: require('./img/2.jpg'),
                     emodzi: 'love'
                 },
                 {

@@ -4,6 +4,7 @@ import styles from './Header.scss';
 
 export function Header() {
     const [burgerMenu, setBurgerMenu] = useState(false);
+    const currentLocation = window.location.href.split('/')[window.location.href.split('/').length - 1];
 
     let burgerButton = styles.header_button;
     let nav = null;
@@ -25,6 +26,10 @@ export function Header() {
                 </ul>
             </nav>
         );
+    }
+
+    if (currentLocation === 'about') {
+        burgerButton += ` ${styles.black}`;
     }
 
     return (

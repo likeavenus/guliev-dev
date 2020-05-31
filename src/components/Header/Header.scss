@@ -11,7 +11,7 @@ $tablet: 768px;
   &:hover {
     .header_button {
       span {
-        background: #000;
+        //background: #fff;
       }
     }
   }
@@ -54,7 +54,7 @@ $tablet: 768px;
   & span {
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #fff;
     transition: all .5s ease;
     display: block;
     border-radius: 40px;
@@ -62,7 +62,7 @@ $tablet: 768px;
 
   &.active {
     span {
-      background: #2F80ED;
+      background: #000;
     }
     
     .button_top {
@@ -81,14 +81,14 @@ $tablet: 768px;
   
   @media (min-width: $tablet) {
     & span {
-      background: #000;
+      background: #fff;
     }
   }
 
-
-  &.white {
-    & span {
-      background: #fff;
+  
+  &.black {
+    span {
+      background: #000;
     }
   }
 }

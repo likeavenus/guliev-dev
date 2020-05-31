@@ -125,6 +125,7 @@ $mont: 'Montserrat', sans-serif;
 .counter_info {
   margin-left: 4px;
   margin-right: 4px;
+  color: #fff;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -178,7 +179,7 @@ $mont: 'Montserrat', sans-serif;
 .block_username {
   font-size: 14px;
   line-height: 17px;
-  color: #000;
+  color: #fff;
   font-family: $mont;
 
   @media (min-width: $tablet) {
@@ -191,7 +192,7 @@ $mont: 'Montserrat', sans-serif;
 .block_profession {
   font-size: 13px;
   line-height: 16px;
-  color: rgba(0, 0, 0, 0.42);
+  color: rgba(255, 255, 255, 0.72);
   font-family: $mont;
 
   @media (min-width: $tablet) {
@@ -216,10 +217,13 @@ $mont: 'Montserrat', sans-serif;
   height: 128px;
   cursor: pointer;
   margin-bottom: 2px;
+  overflow: hidden;
 
   & img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
   }
 
   @media (min-width: 375px) {
@@ -230,6 +234,10 @@ $mont: 'Montserrat', sans-serif;
   @media (min-width: $tablet) {
     width: 232px;
     height: 270px;
+
+    & img:hover {
+      transform: scale(1.04);
+    }
   }
 }
 
@@ -238,30 +246,42 @@ $mont: 'Montserrat', sans-serif;
   width: 125px;
   height: 50px;
   margin: 0 auto;
-  background: #6557FD;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all .5s ease;
+  opacity: 0;
+  animation: show 1s 3s ease forwards;
 
   &:hover {
-    color: rgb(251, 255, 253);
+    background: #000;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, .5);
   }
 
   &:focus {
-    color: #fff;
   }
   &:active {
-    color: #fff;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media (min-width: $tablet) {
     width: 300px;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

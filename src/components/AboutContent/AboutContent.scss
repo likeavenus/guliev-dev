@@ -14,7 +14,7 @@ $tablet: 768px;
     left: 0;
     top: 0;
 
-    background: rgba(255, 255, 255, .7);
+    background: rgba(0, 0, 0, .4);
   }
 
   @media (min-width: 1440px) {
@@ -29,6 +29,7 @@ $tablet: 768px;
   margin: 0 auto;
   position: relative;
   z-index: 20;
+
   @media (min-width: $tablet) {
     width: 700px;
   }
@@ -37,6 +38,7 @@ $tablet: 768px;
 .block_title {
   font-size: 18px;
   margin-bottom: 4px;
+  color: #fff;
 
   @media (min-width: $tablet) {
     margin-bottom: 15px;
@@ -47,11 +49,13 @@ $tablet: 768px;
   font-style: italic;
   font-size: 14px;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .block_info_text {
   margin-bottom: 20px;
   font-size: 15px;
+  color: #fff;
 
   &:last-child {
     margin-bottom: 0;

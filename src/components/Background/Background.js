@@ -32,8 +32,10 @@ export default class Background extends Component {
     componentDidMount() {
         canvas = this.canvas.current;
         ctx = canvas.getContext('2d');
-        canvas.width = document.body.clientWidth;
-        canvas.height = document.body.clientHeight;
+        // canvas.width = document.body.clientWidth;
+        // canvas.height = document.body.clientHeight;
+        canvas.width = window.innerWidth - 20;
+        canvas.height = window.innerHeight;
 
         function Particle(x, y, radius, color) {
             this.x = x;

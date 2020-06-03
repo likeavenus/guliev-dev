@@ -17,9 +17,10 @@ $tablet: 768px;
     background: rgba(0, 0, 0, .4);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $tablet) {
     //padding-bottom: 0;
     //height: calc(100vh - 50px);
+    height: 100vh;
   }
 }
 

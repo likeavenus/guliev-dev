@@ -3,12 +3,10 @@ import styles from './Background.scss';
 
 const colors = [
     '#fff',
-    '#fafd92',
-    '#f7e9fd',
-    '#fdf9d2',
-    '#e5fbfd',
-    '#f3eafd',
-    '#e4fdf8',
+    '#2185c5',
+    '#7ecefd',
+    '#fff6e5',
+    '#ff7f66',
 ];
 
 function randomIntFromRange(min, max) {

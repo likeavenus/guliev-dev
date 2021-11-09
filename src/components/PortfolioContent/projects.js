@@ -2,6 +2,14 @@ import styles from "./PortfolioContent.scss";
 import React from 'react';
 export const projects = [
     {
+        id: 11,
+        name: 'project-x (название в разработке)',
+        href: 'https://likeavenus.github.io/project-x/',
+        imgSrc: require('./img/error.png'),
+        info: <p className={styles.block_info}>Разрабатываю геймифицированный образовательный пет-проект, для junior специалистов. Пока на этапе разработки. Первый личный проект, в который вкладываю все лучшее что впитал в себя за годы работы и жизни в целом.</p>,
+        hashtags: "#React #ReactHooks #Redux #Firebase #MonacoEditor #Webpack5 #SCSS"
+    },
+    {
         id: 2,
         name: 'Канбан-доска',
         href: 'https://likeavenus.github.io/canban-test/',

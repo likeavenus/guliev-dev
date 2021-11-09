@@ -11,7 +11,7 @@ $tablet: 768px;
   &:hover {
     .header_button {
       span {
-        background: #000;
+        background: #fff;
       }
     }
   }
@@ -54,7 +54,7 @@ $tablet: 768px;
   & span {
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #fff;
     transition: all .5s ease;
     display: block;
     border-radius: 40px;
@@ -62,7 +62,7 @@ $tablet: 768px;
 
   &.active {
     span {
-      background: #2F80ED;
+      background: #fff;
     }
     
     .button_top {
@@ -80,13 +80,6 @@ $tablet: 768px;
   }
   
   @media (min-width: $tablet) {
-    & span {
-      background: #000;
-    }
-  }
-
-
-  &.white {
     & span {
       background: #fff;
     }
@@ -116,7 +109,7 @@ $tablet: 768px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  box-shadow: 0 6px 35px rgba(255, 255, 255, .8);
 }
 
 .header_item {
@@ -125,10 +118,11 @@ $tablet: 768px;
 
 .header_link {
   width: 100%;
-  color: #000;
+  color: #fff;
   display: block;
   padding: 20px 0;
   position: relative;
+  background: #000;
   transition: all .15s ease;
 
   &:after {
@@ -143,8 +137,8 @@ $tablet: 768px;
   }
   
   &:hover {
-    background: #4293e6;
-    color: #fff;
+    background: #fff;
+    color: #000;
   }
 }
 

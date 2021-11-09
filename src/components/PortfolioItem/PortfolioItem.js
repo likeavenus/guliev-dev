@@ -13,7 +13,7 @@ export default function PortfolioItem({ href, projectAvatar, avatarAlt, projectN
                 {projectInfo}
 
                 <p className={styles.block_hashtags}>
-                    <span className={styles.block_hashtag}>{hashtags}</span>
+                    <span className={styles.block_hashtags}>{hashtags}</span>
                 </p>
             </div>
         </a>

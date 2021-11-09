@@ -5,6 +5,7 @@ import styles from './Header.scss';
 export function Header() {
     const [burgerMenu, setBurgerMenu] = useState(false);
 
+
     let burgerButton = styles.header_button;
     let nav = null;
 

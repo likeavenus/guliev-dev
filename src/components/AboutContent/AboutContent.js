@@ -14,7 +14,7 @@ export default function AboutContent() {
                 <p className={styles.block_info_text}>На основе этих технологий использую:</p>
                 <p className={styles.block_info_text}>React, Redux, Node.js, PUG, SCSS, Gulp, Webpack, Canvas, БЭМ;</p>
                 <p className={styles.block_info_text}>Использую только ES6+;</p>
-                <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React-&nbsp;проекте;</p>
+                <p className={styles.block_info_text}>Есть опыт создания 2D игр на Phaser 2, а так же в большом React&nbsp;-&nbsp;проекте;</p>
                 <p className={styles.block_info_text}>Так же продолжаю изучать: JavaScript, Node.js, React/Redux, Webpack;</p>
                 <p className={styles.block_info_text}>Немного пробовал:</p>
                 <p className={styles.block_info_text}>Three.js, Tensorflow.js;</p>

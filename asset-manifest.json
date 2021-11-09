@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/guliev/static/css/main.f3dd307b.chunk.css",
+    "main.js": "/guliev/static/js/main.44ff60c2.chunk.js",
+    "main.js.map": "/guliev/static/js/main.44ff60c2.chunk.js.map",
+    "runtime-main.js": "/guliev/static/js/runtime-main.6421a100.js",
+    "runtime-main.js.map": "/guliev/static/js/runtime-main.6421a100.js.map",
+    "static/js/2.a53f722d.chunk.js": "/guliev/static/js/2.a53f722d.chunk.js",
+    "static/js/2.a53f722d.chunk.js.map": "/guliev/static/js/2.a53f722d.chunk.js.map",
+    "index.html": "/guliev/index.html",
+    "precache-manifest.b61b81ef803a449ff29a19b47fa861e7.js": "/guliev/precache-manifest.b61b81ef803a449ff29a19b47fa861e7.js",
+    "service-worker.js": "/guliev/service-worker.js",
+    "static/css/main.f3dd307b.chunk.css.map": "/guliev/static/css/main.f3dd307b.chunk.css.map",
+    "static/media/1.png": "/guliev/static/media/1.aedadc00.png",
+    "static/media/2.jpg": "/guliev/static/media/2.ff761ba2.jpg",
+    "static/media/3.png": "/guliev/static/media/3.e64f89a5.png",
+    "static/media/4.png": "/guliev/static/media/4.d085a6fe.png",
+    "static/media/5.png": "/guliev/static/media/5.642217b3.png",
+    "static/media/6.png": "/guliev/static/media/6.d385e5d6.png",
+    "static/media/aqua.jpg": "/guliev/static/media/aqua.bdafa195.jpg",
+    "static/media/aurora.png": "/guliev/static/media/aurora.6b332b61.png",
+    "static/media/AboutContent.scss": "/guliev/static/media/bg2.714d0894.jpg",
+    "static/media/elon.png": "/guliev/static/media/elon.86d71067.png",
+    "static/media/error.png": "/guliev/static/media/error.4347925c.png",
+    "static/media/gears.png": "/guliev/static/media/gears.981a9ad2.png",
+    "static/media/html.png": "/guliev/static/media/html.19fb4011.png",
+    "static/media/kanban.png": "/guliev/static/media/kanban.9f2f78fd.png",
+    "static/media/leto.jpg": "/guliev/static/media/leto.d5a359d1.jpg",
+    "static/media/switzerland.jpg": "/guliev/static/media/switzerland.d5e9a1df.jpg",
+    "static/media/telegram.svg": "/guliev/static/media/telegram.49aafe51.svg",
+    "static/media/thunder.jpg": "/guliev/static/media/thunder.9ec045e1.jpg",
+    "static/media/whatsapp.svg": "/guliev/static/media/whatsapp.d72748d4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6421a100.js",
+    "static/js/2.a53f722d.chunk.js",
+    "static/css/main.f3dd307b.chunk.css",
+    "static/js/main.44ff60c2.chunk.js"
+  ]
+}
